@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItemsProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ItemsProperties</Name>
+  <ProjectItemPropList>
+    <ProjectItemProp>
+      <NodeName>DynamoDBParseUtils.java&amp;nbsp;&amp;nbsp;&lt;span style="font-size: 12px;color: #aaaaaa;"&gt;com\k2view\cdbms\usercode\common\dynamodb&lt;/span&gt;</NodeName>
+      <RelativePath>Implementation\SharedObjects\Java\src\com\k2view\cdbms\usercode\common\dynamodb\DynamoDBParseUtils</RelativePath>
+      <CategoryKey>Implementation\SharedObjects\Java\src@dynamodb</CategoryKey>
+    </ProjectItemProp>
+    <ProjectItemProp>
+      <NodeName>DynamoDBIoSession.java&amp;nbsp;&amp;nbsp;&lt;span style="font-size: 12px;color: #aaaaaa;"&gt;com\k2view\cdbms\usercode\common\dynamodb&lt;/span&gt;</NodeName>
+      <RelativePath>Implementation\SharedObjects\Java\src\com\k2view\cdbms\usercode\common\dynamodb\DynamoDBIoSession</RelativePath>
+      <CategoryKey>Implementation\SharedObjects\Java\src@dynamodb</CategoryKey>
+    </ProjectItemProp>
+    <ProjectItemProp>
+      <NodeName>DynamoDBIoProvider.java&amp;nbsp;&amp;nbsp;&lt;span style="font-size: 12px;color: #aaaaaa;"&gt;com\k2view\cdbms\usercode\common\dynamodb&lt;/span&gt;</NodeName>
+      <RelativePath>Implementation\SharedObjects\Java\src\com\k2view\cdbms\usercode\common\dynamodb\DynamoDBIoProvider</RelativePath>
+      <CategoryKey>Implementation\SharedObjects\Java\src@dynamodb</CategoryKey>
+    </ProjectItemProp>
+    <ProjectItemProp>
+      <NodeName>&lt;span style="background-color: #707070; color: #00b4e2"&gt;&amp;nbsp;dynamodb&amp;nbsp;&lt;/span&gt;&amp;nbsp;&amp;nbsp;&lt;span style="color: #00b4e2"&gt;SharedLogic.java&lt;/span&gt;&amp;nbsp;&amp;nbsp;&lt;span style="font-size: 12px;color: #aaaaaa;"&gt;com\k2view\cdbms\usercode\common\dynamodb&lt;/span&gt;</NodeName>
+      <RelativePath>Implementation\SharedObjects\Java\src\com\k2view\cdbms\usercode\common\dynamodb\SharedLogic</RelativePath>
+      <CategoryKey>Implementation\SharedObjects\Java\src@dynamodb</CategoryKey>
+    </ProjectItemProp>
+    <ProjectItemProp>
+      <NodeName>largeTransactionError.flow</NodeName>
+      <RelativePath>Implementation\SharedObjects\Broadway\largeTransactionError.flow</RelativePath>
+      <CategoryKey>Implementation\SharedObjects\Broadway@dynamodb_testflows</CategoryKey>
+    </ProjectItemProp>
+    <ProjectItemProp>
+      <NodeName>test.flow</NodeName>
+      <RelativePath>Implementation\SharedObjects\Broadway\test.flow</RelativePath>
+      <CategoryKey>Implementation\SharedObjects\Broadway@dynamodb_testflows</CategoryKey>
+    </ProjectItemProp>
+    <ProjectItemProp>
+      <NodeName>transactionError.flow</NodeName>
+      <RelativePath>Implementation\SharedObjects\Broadway\transactionError.flow</RelativePath>
+      <CategoryKey>Implementation\SharedObjects\Broadway@dynamodb_testflows</CategoryKey>
+    </ProjectItemProp>
+    <ProjectItemProp>
+      <NodeName>DynamoDbMetadata.java&amp;nbsp;&amp;nbsp;&lt;span style="font-size: 12px;color: #aaaaaa;"&gt;com\k2view\cdbms\usercode\common\dynamodb\metadata&lt;/span&gt;</NodeName>
+      <RelativePath>Implementation\SharedObjects\Java\src\com\k2view\cdbms\usercode\common\dynamodb\metadata\DynamoDbMetadata</RelativePath>
+      <CategoryKey>Implementation\SharedObjects\Java\src@dynamodb</CategoryKey>
+    </ProjectItemProp>
+    <ProjectItemProp>
+      <NodeName>DynamoDBDefaults.java&amp;nbsp;&amp;nbsp;&lt;span style="font-size: 12px;color: #aaaaaa;"&gt;com\k2view\cdbms\usercode\common\dynamodb&lt;/span&gt;</NodeName>
+      <RelativePath>Implementation\SharedObjects\Java\src\com\k2view\cdbms\usercode\common\dynamodb\DynamoDBDefaults</RelativePath>
+      <CategoryKey>Implementation\SharedObjects\Java\src@dynamodb</CategoryKey>
+    </ProjectItemProp>
+    <ProjectItemProp>
+      <NodeName>DynamoDbSnapshotDataset.java&amp;nbsp;&amp;nbsp;&lt;span style="font-size: 12px;color: #aaaaaa;"&gt;com\k2view\cdbms\usercode\common\dynamodb\metadata&lt;/span&gt;</NodeName>
+      <RelativePath>Implementation\SharedObjects\Java\src\com\k2view\cdbms\usercode\common\dynamodb\metadata\DynamoDbSnapshotDataset</RelativePath>
+      <CategoryKey>Implementation\SharedObjects\Java\src@dynamodb</CategoryKey>
+    </ProjectItemProp>
+  </ProjectItemPropList>
+  <ProjectItemsCategoryList>
+    <ProjectItemsCategory>
+      <Name>dynamodb</Name>
+      <Key>Implementation\SharedObjects\Java\src@dynamodb</Key>
+    </ProjectItemsCategory>
+    <ProjectItemsCategory>
+      <Name>dynamodb_testflows</Name>
+      <Key>Implementation\SharedObjects\Broadway@dynamodb_testflows</Key>
+    </ProjectItemsCategory>
+  </ProjectItemsCategoryList>
+</ProjectItemsProperties>

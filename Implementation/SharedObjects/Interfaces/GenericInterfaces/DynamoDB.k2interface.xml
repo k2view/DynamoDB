@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GenericInterface xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="CUSTOM" displayName="Custom" enabled="true" version="1.3">
+  <Name>DynamoDB</Name>
+  <Properties>
+    <Property name="Host">
+      <Value>eu-central-1</Value>
+    </Property>
+    <Property name="Port">
+      <Value>0</Value>
+    </Property>
+    <Property name="User">
+      <Value />
+    </Property>
+    <Property name="Password">
+      <Value />
+    </Property>
+    <Property name="Data">
+      <Value />
+    </Property>
+    <Property name="ioprovider">
+      <Value>dynamoDBIoProvider</Value>
+    </Property>
+    <Property name="TechType">
+      <Value>database</Value>
+    </Property>
+  </Properties>
+</GenericInterface>

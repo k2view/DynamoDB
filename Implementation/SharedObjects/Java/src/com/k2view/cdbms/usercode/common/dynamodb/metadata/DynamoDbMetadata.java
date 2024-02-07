@@ -62,7 +62,7 @@ public class DynamoDbMetadata implements IoMetadata {
     }
 
     @Override
-    public SnapshotDataset snapshotDataset(String dataset, String schema, SampleSize size, boolean fetchNulls) {
+    public SnapshotDataset snapshotDataset(String dataset, String schema, SampleSize size, Map<String, Object> map) {
         return new DynamoDbSnapshotDataset(session, dbClient, dataset, size);
     }
 

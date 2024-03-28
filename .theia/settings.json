@@ -16,17 +16,14 @@
         "/opt/apps/fabric/workspace/fabric/lib/fabric/broadway*.jar",
 		"/opt/apps/fabric/workspace/fabric/lib/fabric/graphit*.jar",
         "/opt/apps/fabric/workspace/fabric/lib/provided/*.jar",
+        "/opt/apps/fabric/workspace/fabric/lib/fabric/discovery*.jar",
         "lib/*.jar",
-        "/opt/apps/fabric/workspace/fabric/lib/fabric/auth-*.jar",
-        "/opt/apps/fabric/workspace/fabric/lib/fabric/jsr*.jar",
-        "/opt/apps/fabric/workspace/fabric/lib/fabric/regions*.jar",
-        "/opt/apps/fabric/workspace/fabric/lib/fabric/*.jar",
     ],
     "java.project.outputPath": ".studioWeb/java/bin",
     "java.project.sourcePaths": [
 		"Implementation/SharedObjects/Java/src",	
-		"Implementation/LogicalUnits/k2_ref/Java/src",	
-		"Implementation/LogicalUnits/k2_ws/Java/src"	
+		"Implementation/LogicalUnits/k2_ws/Java/src",	
+		"Implementation/LogicalUnits/k2_ref/Java/src"	
 	],
 	"java.project.resourceFilters": [
         "node_modules",

@@ -129,7 +129,7 @@ public class DynamoDBParseUtils {
             case N:
                 BigDecimalStringConverter bigDecimalStringConverter = BigDecimalStringConverter.create();
                 return bigDecimalStringConverter.fromString(value.n());
-                // TODO - Double/Long or BigDecimal?
+                // Double/Long or BigDecimal?
 //                return ParamConvertor.toNumber(value.n());
             case BOOL:
                 return value.bool();

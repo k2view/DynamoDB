@@ -263,7 +263,7 @@ public class DynamoDbMetadata implements IoMetadata {
             case B:
                 return BytesClass.BYTES.getClassName();
             case N:
-                // TODO
+                // TO-DO
                 return "BIG_DECIMAL";
             default:
                 return UnknownClass.UNKNOWN.getClassName();

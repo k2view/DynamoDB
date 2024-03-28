@@ -1,4 +1,3 @@
 Implementation/SharedObjects/Java/src/com/k2view/cdbms/usercode/common/dynamodb
-Implementation/SharedObjects/Broadway/DynamoDB
 Implementation/SharedObjects/Interfaces/GenericInterfaces/DynamoDB.k2interface.xml
 lib

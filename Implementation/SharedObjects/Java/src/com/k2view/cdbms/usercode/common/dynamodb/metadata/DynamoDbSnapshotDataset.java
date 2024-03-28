@@ -86,7 +86,7 @@ public class DynamoDbSnapshotDataset implements SnapshotDataset {
                 .tableName(dataset)
                 .build());
         return describeTableResponse.table().itemCount();
-        // TODO - itemCount is only updated every 6 hours at AWS
+        // Note - itemCount is only updated every 6 hours at AWS
     }
 
     @Override

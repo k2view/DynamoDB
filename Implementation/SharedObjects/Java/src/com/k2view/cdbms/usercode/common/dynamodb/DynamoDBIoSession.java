@@ -223,7 +223,6 @@ public class DynamoDBIoSession extends AbstractIoSession {
 
             @Override
             public int rowsAffected() throws Exception {
-                // TODO
                 return IoCommand.Result.super.rowsAffected();
             }
 

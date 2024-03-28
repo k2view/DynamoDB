@@ -3,7 +3,7 @@
     "displayName": "DynamoDB Connector",
     "description": "DynamoDB connector for K2View fabric",
     "publisher": "K2View",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "preview": true,
     "engines": {
         "vscode": "^1.79.0"

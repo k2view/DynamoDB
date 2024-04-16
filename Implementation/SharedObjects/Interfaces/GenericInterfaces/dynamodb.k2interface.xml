@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GenericInterface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="DynamoDB" displayName="" enabled="true" version="1.4">
+    <Name>dynamodb</Name>
+    <Properties>
+        <Property name="REGION">
+            <Value>eu-central-1</Value>
+        </Property>
+        <Property name="BATCH_SIZE">
+            <Value>100</Value>
+        </Property>
+        <Property name="ioprovider">
+            <Value>dynamoDBIoProvider</Value>
+        </Property>
+        <Property name="delegate">
+            <Value></Value>
+        </Property>
+        <Property name="TechType">
+            <Value>database</Value>
+        </Property>
+    </Properties>
+</GenericInterface>

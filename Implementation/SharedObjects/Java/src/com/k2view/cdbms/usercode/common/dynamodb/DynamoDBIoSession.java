@@ -21,6 +21,7 @@ import java.util.regex.Pattern;
 
 import static com.k2view.cdbms.usercode.common.dynamodb.DynamoDBParseUtils.toAttributeValueList;
 
+@SuppressWarnings("all")
 public class DynamoDBIoSession extends AbstractIoSession {
     private final Log log = Log.a(this.getClass());
     private boolean inTransaction;
@@ -57,12 +58,12 @@ public class DynamoDBIoSession extends AbstractIoSession {
     }
 
     private DynamoDbClient createDbClient() {
-        Object host = sessionParams.get("Host");
+        Object region = sessionParams.get("AWS_REGION");
         DynamoDbClientBuilder dynamoDbClientBuilder = DynamoDbClient
                 .builder()
                 .credentialsProvider(DefaultCredentialsProvider.create());
-        if (host != null && !Util.isEmpty(host.toString())) {
-            dynamoDbClientBuilder.region(Region.of(host.toString().toLowerCase()));
+        if (region != null && !Util.isEmpty(region.toString())) {
+            dynamoDbClientBuilder.region(Region.of(region.toString().toLowerCase()));
         }
         return dynamoDbClientBuilder.build();
     }

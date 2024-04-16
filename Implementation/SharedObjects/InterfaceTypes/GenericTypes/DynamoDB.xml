@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GenericInterfaces>
+	<Interfaces>
+		<Interface type="DynamoDB" displayName="DynamoDB" enabled="true" version="1.0" category="Others" techType="database">
+                <Properties>
+                    <Property name="REGION" displayName="AWS Region" dataType="string" mandatory="false" readOnly="false" category="" secretManagerHelper="true">
+                        <DefaultValue/>
+                        <Comments/>
+                </Property>
+                <Property name="BATCH_SIZE" displayName="Batch size" dataType="integer" mandatory="false" category="Batch">
+                    <DefaultValue>100</DefaultValue>
+                    <Comments>
+                        The size of a single batch, in case batchMode=true
+                    </Comments>
+                </Property>
+				<Property name="ioprovider" displayName="IoProvider Function" dataType="string" mandatory="true" readOnly="true" category="Advanced" disabledOnEnvOverride="true">
+					<DefaultValue>dynamoDBIoProvider</DefaultValue>
+					<Comments>Function name that returns IoProvider</Comments>
+				</Property>
+				<Property name="delegate" displayName="" dataType="string" mandatory="false" readOnly="true" category="Advanced" disabledOnEnvOverride="true">
+					<DefaultValue></DefaultValue>
+					<Comments/>
+				</Property>
+                <Property name="TechType" displayName="Tech Category" dataType="OptionsListEditable" mandatory="false" readOnly="true" category="Advanced" disabledOnEnvOverride="true">
+                    <DefaultValue>database</DefaultValue>
+                    <Comments/>
+                    <OptionsList>
+                            <Option value="database">Database</Option>
+                    </OptionsList>
+                </Property>
+			</Properties>
+		</Interface>
+	</Interfaces>
+</GenericInterfaces>

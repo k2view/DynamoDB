@@ -10,10 +10,6 @@ import java.util.Map;
 public class DynamoDBIoProvider implements IoProvider {
     @Override
     public IoSession createSession(String identifier, Map<String, Object> params) {
-        Map<String,Object> data = Json.get().fromJson(params.get("Data").toString());
-        if (!Util.isEmpty(data)) {
-            params.putAll(data);
-        }
         return new DynamoDBIoSession(identifier, params);
     }
 

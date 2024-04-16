@@ -8,7 +8,7 @@
                         <Comments/>
                 </Property>
                 <Property name="BATCH_SIZE" displayName="Batch size" dataType="integer" mandatory="false" category="Batch">
-                    <DefaultValue>100</DefaultValue>
+                    <DefaultValue>25</DefaultValue>
                     <Comments>
                         The size of a single batch, in case batchMode=true
                     </Comments>

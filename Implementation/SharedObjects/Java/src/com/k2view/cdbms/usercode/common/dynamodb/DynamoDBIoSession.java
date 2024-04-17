@@ -2,6 +2,7 @@ package com.k2view.cdbms.usercode.common.dynamodb;
 
 import com.k2view.cdbms.usercode.common.dynamodb.metadata.DynamoDbMetadata;
 import com.k2view.fabric.common.Log;
+import com.k2view.fabric.common.ParamConvertor;
 import com.k2view.fabric.common.Util;
 import com.k2view.fabric.common.io.AbstractIoSession;
 import com.k2view.fabric.common.io.IoCommand;
@@ -50,7 +51,7 @@ public class DynamoDBIoSession extends AbstractIoSession {
         if (params != null) this.sessionParams.putAll(params);
         this.inTransaction = false;
         this.interfaceIdentifier = identifier;
-        this.recordsInBatch = DynamoDBDefaults.BATCH_SIZE.get(params);
+        this.recordsInBatch = ParamConvertor.toNumber(params.get("BATCH_SIZE")).intValue();
         if (recordsInBatch < 1) {
             throw new IllegalArgumentException("Batch size must be between 1 and the maximum defined by AWS");
         }
@@ -58,7 +59,7 @@ public class DynamoDBIoSession extends AbstractIoSession {
     }
 
     private DynamoDbClient createDbClient() {
-        Object region = sessionParams.get("AWS_REGION");
+        Object region = sessionParams.get("REGION");
         DynamoDbClientBuilder dynamoDbClientBuilder = DynamoDbClient
                 .builder()
                 .credentialsProvider(DefaultCredentialsProvider.create());

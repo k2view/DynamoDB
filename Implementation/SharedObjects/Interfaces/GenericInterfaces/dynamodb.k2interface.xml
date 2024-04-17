@@ -6,7 +6,7 @@
             <Value>eu-central-1</Value>
         </Property>
         <Property name="BATCH_SIZE">
-            <Value>100</Value>
+            <Value>25</Value>
         </Property>
         <Property name="ioprovider">
             <Value>dynamoDBIoProvider</Value>

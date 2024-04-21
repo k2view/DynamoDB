@@ -8,7 +8,7 @@ stages:
           interface:
             const: dynamodb
           sql:
-            const: 'INSERT INTO Music value { ''Author'': ''Faress242'' }'
+            const: SELECT * FROM Music;
   Stage 2:
     actors:
       Logger1:

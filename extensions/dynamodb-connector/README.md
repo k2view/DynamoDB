@@ -16,10 +16,10 @@ As for what is recommended, **Instance profile credentials** is preferred when r
 
 
 ## How to Use
-1. Create a new DynamoDB custom interface:
+1. Create a Fabric interface of type DynamoDB:
    - Specify the AWS region (If you don’t explicitly set it, the AWS SDK consults the [Default Region Provider Chain](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/region-selection.html#automatically-determine-the-aws-region-from-the-environment) to try and determine the region to use).
 
-3. Use the Broadway actor DbCommand; set the "interface" input as the DynamoDB interface that you've created/imported.
+2. Use the Broadway actor DbCommand; set the "interface" input as the DynamoDB interface that you've created.
     - See the actor description for more info on how to use it.
     - The sql command syntax should match the PartiQL query language's syntax.
       - Note that in PartiQL, unlike common SQL languages, there is no LIMIT clause. As a workaround, we added some logic to support "LIMIT {number}" **ONLY** at the end of a statement - so if needed, use it with caution.

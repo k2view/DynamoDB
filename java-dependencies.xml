@@ -1,0 +1,11 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.k2view</groupId>
+    <artifactId>parent-project</artifactId>
+    <version>1.0.0</version>
+
+    <dependencies>
+        <!-- Copy any dependency definition from: https://mvnrepository.com and add it here -->
+
+    </dependencies>
+</project>

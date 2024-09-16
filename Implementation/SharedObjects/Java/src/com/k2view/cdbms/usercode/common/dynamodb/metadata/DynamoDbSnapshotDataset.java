@@ -18,6 +18,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
+@SuppressWarnings("all")
 public class DynamoDbSnapshotDataset implements SnapshotDataset {
     private final Log log = Log.a(this.getClass());
     private final String dataset;
@@ -32,38 +33,14 @@ public class DynamoDbSnapshotDataset implements SnapshotDataset {
         this.size=size;
     }
 
-    @SuppressWarnings("unchecked")
     @Override
-    public Stream<DatasetEntry> fetch() throws Exception {
+    public Iterator<Map<String, Object>> fetch() throws Exception {
         final int limit = getLimit(dataset, size);
         String query=String.format("SELECT * from \"%s\"", dataset);
         query = query.concat(" LIMIT ?");
         IoCommand.Result result = session.prepareStatement(query).execute(limit);
         Iterator<IoCommand.Row> iterator = result.iterator();
-        return StreamSupport.stream(new Spliterators.AbstractSpliterator<DatasetEntry>(Long.MAX_VALUE, Spliterator.ORDERED) {
-            @Override
-            public boolean tryAdvance(Consumer<? super DatasetEntry> action) {
-                return Util.rte(() -> {
-                    if (!iterator.hasNext()) {
-                        return false;
-                    }
-                    try{
-                        IoCommand.Row next = iterator.next();
-                        Map<String, String> rowMap = next.entrySet()
-                                .stream()
-                                .collect(Collectors.toMap(
-                                        Map.Entry::getKey,
-                                        e -> ParamConvertor.toString(e.getValue())));
-                        action.accept(new DatasetEntry(dataset, rowMap));
-
-                    } catch (Exception ex){
-                        log.error(ex);
-                        action.accept(new DatasetEntry(dataset, new HashMap<>()));
-                    }
-                    return true;
-                });
-            }
-        }, false);
+        return (Iterator<Map<String, Object>>)((Iterator<?>) iterator);
     }
 
     private int getLimit(String dataset, SampleSize size) {
